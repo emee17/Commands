@@ -35,3 +35,5 @@ git commit -m "message"  //commit changes or add
 git remote add origin master <URL to which we want to add repo>  // add to git repo on server
 
 git push -u origin master // this make save files on server
+
+git pull --rebase origin master// change local repo to another
