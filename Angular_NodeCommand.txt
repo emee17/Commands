@@ -4,4 +4,5 @@ npm -v
 npm install -g @angular/cli 	//To install Angular CLI
 ng new first-app
 npm start /ng serve
-ng g c // for creating new component
+ng g c <name>// for creating new component
+ng g s <name>// for creating new service
