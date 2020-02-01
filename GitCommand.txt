@@ -1,0 +1,37 @@
+cd /c
+ls
+git config --global user.name "name"
+git config --global user.email "<your e-mail>"
+git clone
+git remote 
+git remote -v
+git status
+start notepad example.txt
+git add example.txt
+git commit -m "First example"
+git push
+
+
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
+other commands
+git clone (url)
+git add (file names)
+git commit -m "(committed message)
+git push -u origin master
+git remote add origin master (url)
+
+https://github.com/emee17/SpringMvcJPACrud.git
+
+git init <repo name>	// for creating git repo
+
+git add sample.txt for single  or git add . for all
+
+git pull // check if there are any update in repos
+
+git commit -m "message"  //commit changes or add
+
+git remote add origin master <URL to which we want to add repo>  // add to git repo on server
+
+git push -u origin master // this make save files on server

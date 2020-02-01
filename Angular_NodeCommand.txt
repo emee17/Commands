@@ -1,0 +1,7 @@
+node --version
+ng --version
+npm -v
+npm install -g @angular/cli 	//To install Angular CLI
+ng new first-app
+npm start /ng serve
+ng g c // for creating new component
