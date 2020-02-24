@@ -1,0 +1,6 @@
+npm --save-dev nodemon  //automatic restart server
+npm install --save express //to install express
+npm install --save morgan //Logger
+npm install --save express body-parser corse //
+npm install --save mongoose // mongoose
+npm install mysql --save
