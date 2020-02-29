@@ -24,7 +24,8 @@ git remote add origin master (url)
 
 https://github.com/emee17/SpringMvcJPACrud.git
 
-git init <repo name>	// for creating git repo
+git init <repo name>	// for creating git repo inside current folder
+git init 	// for creating git repo current folder
 
 git add sample.txt for single  or git add . for all
 
@@ -37,3 +38,7 @@ git remote add origin master <URL to which we want to add repo>  // add to git r
 git push -u origin master // this make save files on server
 
 git pull --rebase origin master// change local repo to another
+
+touch .gitignore // create git ignore
+
+git reset .//unstage all files

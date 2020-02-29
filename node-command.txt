@@ -1,6 +1,14 @@
+npm init
 npm --save-dev nodemon  //automatic restart server
 npm install --save express //to install express
 npm install --save morgan //Logger
-npm install --save express body-parser corse //
+npm install --save express body-parser cors //
 npm install --save mongoose // mongoose
 npm install mysql --save
+
+
+
+//To Start an API project
+npm init
+
+npm install --save express body-parser cors morgan nodemon mysql 

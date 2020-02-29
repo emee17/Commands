@@ -6,3 +6,13 @@ ng new first-app
 npm start /ng serve
 ng g c <name> -it -is // for creating new component
 ng g s <name>// for creating new service
+
+npm install -g @angular/cli  #install latest version of angular/cli
+ng update @angular/cli  #Update to latest version
+npm uninstall -g @angular/cli    #Uninstall the previous version
+npm cache clean
+npm install --save bootstrap 
+npm install --save @ng-bootstrap/ng-bootstrap //for modal "@ng-bootstrap/ng-bootstrap": "~5.2.2" // if ng bootsrap doesnt work
+npm i
+
+

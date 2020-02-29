@@ -1,0 +1,3 @@
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysql -uroo -proot
