@@ -14,5 +14,7 @@ npm cache clean
 npm install --save bootstrap 
 npm install --save @ng-bootstrap/ng-bootstrap //for modal "@ng-bootstrap/ng-bootstrap": "~5.2.2" // if ng bootsrap doesnt work
 npm i
-
-
+npm install --save multer //for file upload
+npm install --save bcrypt //bcrypt
+npm install --save jsonwebtoken
+npm install --save fs-extra
