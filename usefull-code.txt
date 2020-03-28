@@ -1,0 +1,13 @@
+  /* await Test.deleteOne({_id : id, user : userId}, {session})
+            const user = await User.findById(userId).populate('tests')
+            console.log('user ',user);
+            const tests = await Test.find({user : userId})
+            console.log('tests ',tests);
+            
+            user.tests = tests
+            console.log('user  splice ',user); */
+            
+            //throw new Error('Something bad happend')
+
+
+//await User.update( {_id : userId}, { $pullAll: { tests: [test] } }, {session} )

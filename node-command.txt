@@ -12,3 +12,8 @@ npm install mysql --save
 npm init
 
 npm install --save express body-parser cors morgan nodemon mysql 
+
+
+npm init
+npm install --save express body-parser cors morgan mongoose bcrypt jsonwebtoken
+npm --save-dev nodemon

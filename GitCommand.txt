@@ -1,7 +1,7 @@
 cd /c
 ls
-git config --global user.name "name"
-git config --global user.email "<your e-mail>"
+git config --global user.name "emee17"
+git config --global user.email "emmibad@gmail.com"
 git clone
 git remote 
 git remote -v

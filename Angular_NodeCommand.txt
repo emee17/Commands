@@ -6,6 +6,7 @@ ng new first-app
 npm start /ng serve
 ng g c <name> -it -is // for creating new component
 ng g s <name>// for creating new service
+ng g guard
 
 npm install -g @angular/cli  #install latest version of angular/cli
 ng update @angular/cli  #Update to latest version
@@ -18,3 +19,14 @@ npm install --save multer //for file upload
 npm install --save bcrypt //bcrypt
 npm install --save jsonwebtoken
 npm install --save fs-extra
+
+// Important imports modules
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
+
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { catchError, map } from "rxjs/operators";
+import { throwError, Observable } from "rxjs";
+import { Avenger } from './avenger';
+import { Router } from '@angular/router';
