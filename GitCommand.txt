@@ -42,3 +42,5 @@ git pull --rebase origin master// change local repo to another
 touch .gitignore // create git ignore
 
 git reset .//unstage all files
+
+git pull origin branchname --allow-unrelated-histories // fatal: refusing to merge unrelated histories

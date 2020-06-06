@@ -1,0 +1,13 @@
+Shortlisted Templates
+Purple Admin
+
+Changes in File
+src\assets\scss\_misc.scss
+src\assets\css\registration.css
+tsconfig.json
+src\assets\scss\components\landing-screens\_auth.scss
+
+
+
+border-radius: 10px;
+box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);

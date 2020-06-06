@@ -7,6 +7,7 @@ npm start /ng serve
 ng g c <name> -it -is // for creating new component
 ng g s <name>// for creating new service
 ng g guard
+ng serve --port 4300
 
 npm install -g @angular/cli  #install latest version of angular/cli
 ng update @angular/cli  #Update to latest version
@@ -19,6 +20,12 @@ npm install --save multer //for file upload
 npm install --save bcrypt //bcrypt
 npm install --save jsonwebtoken
 npm install --save fs-extra
+npm install ngx-spinner --save //for loading spinner
+npm install --save ngx-bootstrap
+npm install ngx-pagination --save
+ng serve --host 0.0.0.0
+ng serve --host 0.0.0.0 --ssl true
+ng serve  ssl true — ssl-cert ssl/server.crt — ssl-key ssl/server.key — proxy-config proxy.config.json
 
 // Important imports modules
 import {ReactiveFormsModule} from '@angular/forms';
@@ -30,3 +37,23 @@ import { catchError, map } from "rxjs/operators";
 import { throwError, Observable } from "rxjs";
 import { Avenger } from './avenger';
 import { Router } from '@angular/router';
+
+npm uninstall -g @angular/cli
+npm cache clean
+# if npm version is > 5 then use `npm cache verify` to avoid errors (or to avoid using --force)
+npm install -g @angular/cli@latest
+
+SSL
+1st method
+git clone https://github.com/RubenVermeulen/generate-trusted-ssl-certificate.git
+bash generate.sh
+
+"options": {
+            "browserTarget": "demo1:build",
+            "sslKey": "ssl/server.key",
+            "sslCert": "ssl/server.crt"
+          },
+
+2nd method
+npm install browser-sync --save-dev
+ng serve --ssl true --host 0.0.0.0 --ssl-key /node_modules/browser-sync/lib/server/certs/server.key --ssl-cert /node_modules/browser-sync/lib/server/certs/server.crt
