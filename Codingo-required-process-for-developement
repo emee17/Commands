@@ -1,0 +1,5 @@
+
+For Production 
+	PM2 -> RunApplication in background instead of terminal
+	Nginx -> serve static files
+	Environment Variables for Prouction and developement

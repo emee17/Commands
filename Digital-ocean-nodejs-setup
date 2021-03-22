@@ -1,0 +1,63 @@
+sudo apt-get update
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+	refered document -- https://github.com/nodesource/distributions/blob/master/README.md
+
+mogodb on linux
+
+1. echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+1. sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+2. echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+3.sudo apt-get update
+
+sudo systemctl start mongod
+sudo systemctl stop mongod
+
+npm install -g pm2
+
+pm2 status
+pm2 restart server.js
+pm2 logs
+pm2 startup ubuntu
+pm2 start server.js //pm2 start file.js --max-memory-restart 100M
+pm2 stop server
+
+enable firewall
+ufw status
+ufw enable
+ufw allow ssh
+
+ufw allow http
+ufw allow https
+
+install nginx
+sudo apt install nginx
+sudo nano /etc/nginx/sites-available/default
+		proxy_pass http://localhost:5000; #whatever port your app runs on
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+
+# Check NGINX config
+sudo nginx -t
+
+# Restart NGINX
+sudo service nginx restart
+
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-nginx
+sudo certbot --nginx -d codejango.com -d www.codejango.com
+
+# Only valid for 90 days, test the renewal process with
+certbot renew --dry-run
+
+#logs 
+cat /var/log/nginx/error.log
+pm2 log --lines 500
+
+systemctl status mongod
+
+sudo nano /etc/ssh/sshd_config

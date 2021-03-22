@@ -1,0 +1,110 @@
+write mongod --port 27017 on cmd
+then connect to mongo shell : mongo --port 27017
+create the user admin : use admin db.createUser( { user: "myUserAdmin", pwd: "abc123", roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] } )
+disconnect mongo shell
+restart the mongodb : mongod --auth --port 27017
+start mongo shell : mongo --port 27017 -u "myUserAdmin" -p "abc123" --authenticationDatabase "admin"
+To authenticate after connecting, Connect the mongo shell to the mongod: mongo --port 27017
+switch to the authentication database : use admin db.auth("myUserAdmin", "abc123")
+
+db.createUser( { user: "namazshaikh", pwd: "namaz17codejango", roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ] } )
+db.createUser({user:"codejango",pwd:"codejango12Aug" ,roles:[{role:"dbAdmin",db:"codejango"}]})
+db.createUser({user:"codejango",pwd:"codejango12Aug" ,roles:[{role:"dbOwner",db:"codejango"}]})
+mongo -u codejango -p --authenticationDatabase codejango
+---db.createUser({user:"codejango",pwd:"Codejango17@namaz",roles:[{role:"userAdminAnyDatabase",db:"admin"},"readWriteAnyDatabase"]})
+db.grantRolesToUser('namazshaikh', [{ role: 'root', db: 'admin' }])
+db.grantRolesToUser('codejango', [{ role: 'root', db: 'codejango' }])
+
+Create user in Digital ocean
+
+mongod --port 27017 --dbpath E:\RootProgramming\mongodb\db0    	--Start mongodb instance by specifying path
+mongod --auth --dbpath E:\RootProgramming\mongodb\db0			--Start mongodb instance by specifying path without port
+mongod --auth --dbpath E:\RootProgramming\mongodb\db0 --replSet rs0 --bind_ip localhost
+mongod --dbpath /srv/mongodb/db0 --replSet rs0 --bind_ip localhost		
+rs.initiate()	
+^-Start mongodb instance by specifying path without port
+--then create user for admin and specific database--
+
+use admin
+157.245.109.254
+
+mongod --fork  --dbpath /var/lib/mongodb --config /etc/mongod.conf --replSet rs0 --bind_ip localhost --logpath /var/log/mongodb/mongod.log
+ps aux | grep mongo
+kill <processId>
+
+mongod --fork --dbpath /var/lib/mongodb --config /etc/mongod.conf --replSet rs0 --bind_ip localhost --logpath /var/log/mongodb/mongod.log
+
+---mongodb backup---
+sudo mongodump -u codejango -p codejango12Aug --db codejango --out /var/backups/mongo
+
+crone task for daily backup at 3.03 AM
+sudo crontab -e
+3 3 * * * mongodump -u codejango -p codejango12Aug --db codejango --out /var/backups/mongo
+
+restore mongodb backup
+sudo mongorestore -u codejango -p codejango12Aug --db codejango --out /var/backups/mongo/codejango
+
+mongod --shutdown
+
+sudo chown -R mongodb:mongodb /var/log/mongodb
+sudo chown -R mongodb:mongodb /var/lib/mongodb
+sudo chmod -R 755 /var/lib/mongodb
+sudo chmod -R 755 /var/log/mongodb
+sudo chown mongodb /tmp/mongodb-27017.sock
+sudo chgrp mongodb /tmp/mongodb-27017.sock
+sudo systemctl restart mongod
+sudo systemctl status mongod
+
+Username and Password for codejango 
+codevention7@gmail.com
+codevention17@namaz
+
+namecheap 
+codejango7
+codejango17@namaz
+
+codejango7@gmail.com
+codejango17@namaz
+
+
+sudo systemctl status mongod
+
+You can stop the server anytime by typing:
+sudo systemctl stop mongod
+
+To start the server when it is stopped, type:
+sudo systemctl start mongod
+
+You can also restart the server with a single command:
+sudo systemctl restart mongod
+
+By default, MongoDB is configured to start automatically with the server. If you wish to disable the automatic startup, type:
+sudo systemctl disable mongod
+
+It’s just as easy to enable it again. To do this, use:
+sudo systemctl enable mongod
+
+
+
+sudo netstat -tulpn | grep 27017
+
+db.users.update({"email" : "namazshaikh2@gmail.com"},{$set: { "role" : "super-admin"}});
+
+ssh -L 27010:localhost:27017 root@157.245.109.254 -f -N
+
+5f54bd15b6cf9c0cebaeb4a9
+
+ db.users.update({email : "mohddanishali8@gmail.com"}, { role : "admin"})
+
+ db.users.update({ email : "mohddanishali8@gmail.com" },{ $set: { role : "admin"}})
+ 
+
+ db.users.update({ email : "aansari98210@gmail.com" },{ $set: { role : "admin"}})
+
+ kaleem_khan@idealake.com
+
+ db.users.update({ email : "kksul123@gmail.com" },{ $set: { role : "admin"}})
+
+
+ openssl rand -base64 756 > /root/developement
+chmod 400 /root/developement

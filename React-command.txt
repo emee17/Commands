@@ -1,0 +1,29 @@
+-To create a new app
+npx create-react-app <app-name>
+
+-to serve app
+npm start
+
+-to make build of app 
+npm run build
+
+-to install serve package for build
+npm i -g serve 
+
+-to serve build
+serve -s build -p 8000
+
+-for react icons
+npm react-icons
+
+-for bootstrap
+npm install react-bootstrap bootstrap
+
+-for routing we need to install package
+npm react-router-dom
+
+-for fake json server
+npm i json-server
+
+-to run fake backend server
+npm run json-server --watch db.json -p 8000

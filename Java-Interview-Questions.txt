@@ -1,0 +1,251 @@
+Core Java 
+  Oops
+    What is Oops Concept
+    What is Inheritence Polymorphism Encapsulation Abstraction
+    How to create Object in Java 
+    By How many ways we can create object in Java
+    What is Object Cloning
+    What is Static Keyword and its use
+    What is Signleton Class and How to create it
+    What is Final Super this in Java
+    What is compile time Polymorphims and Runtime Pplymorphims?
+    Can we overload main method
+    Can we override static method
+    Can we Change return type in method Overloading
+    Why cant we change return type in method overloading
+    Can we override private methods
+    What is blank final variable 
+    can we re-assign Final variable 
+    What is local variable, instance variable and static vairable and what are there scopes
+    How Java Objects stored in memory
+    Why multiple Inheritence is not supported in Java
+    What is finalize()
+    How Garbage collector works in Java
+    What happen if we Run Java class without main method But static block is there?
+    What are features of Java 8
+    What is constructor overloading
+    What is serialization and deserialization in Java
+    What is the purpose of transient variable
+    What is the purpose of a Volatile Variable?
+    What is inner classes?
+    What is Immutable class and How to create immutable class?
+    How to make member variable Immutable?
+    What if we make hashmap object final?
+    What is difference between Framework and Library
+
+  String
+    Why String is immutable
+    What is String pool
+    What is String Literal 
+    Difference Between Creating String object with Literal and new Keyword
+    What are String methods
+    What does intern() do?
+    Difference between String, StringBuffer and StringBuilder
+    How to reverse a String
+
+  Interface
+    What is interface and its use
+    How many types of interface are there
+    Can we create object of Interface
+    What is features of Interface in Java 8
+    If Abstract class is there then why to use interface
+    What is Marker Interface?
+
+  Abstracts Class
+    What is interface and its use
+    Difference between interface and Abstract class
+    If interface is there then why to use Abstract class
+    If Abstract class has constructor then why cant we create Object of Abstract Class
+
+  Lamda Expression
+    What is Lambda Expression and Use of it?
+    Why lambda Expression came to picture
+    What type of Interface is required to implement Lambda Expression
+
+  Collection
+    What are Methods in Collection
+    What are Interface in Collection
+    Define List Set Queue
+    Difference between List and Set
+    What is ArrayList LinkedList Vector Stack HashSet LinkedHashet 
+    Difference between ArrayList and LinkedList
+    Difference between ArrayList and Vector
+    How do you convert Array to ArrayList and ArrayList to Array?
+    What is Default size of Array LinkedList Vector 
+    How to avoid ConcurrentModificationException while iterating a collection?
+    Difference between HashSet and TreeSet.
+    What is Map
+    Difference between Collection and Map
+    What is Hashmap LinkedHashMap TressMap HashTable WeakaHashMap IdentityHashMap
+    What is internal work on HashMap
+    What is the ConcurrentHashMap in Java and do you implement it?
+    What is SynchronizedHashMap and Difference between SynchronizedHashMap ConcurrentHashMap
+    What is new Improvements of Hashmap in Java 8?
+    Difference between HashMap and Hashtable
+    What is generic Collection
+    Difference between Comparator and Comparable
+    What is use of Comparator and Comparable
+    What are iterators
+    How to Synchronize ArrayList and Map
+    What is Collection Class
+    Difference between Array and ArrayList
+    What is use of  Equal and Hashcode
+    What is stream in Java
+    What is filter foreach reduce map methods in stream
+    Difference between Ordered and Sorted in Collection
+    What is the main benefit of using the Properties file?
+
+  Exception
+    What is Exception in Java
+    What is Exception Handling
+    How to create Custome Exception
+    What is try catch and finally
+    can we use try without cath
+    can we use try with multiple cath
+    What if we return something before finally Will Finally Execute?
+    Difference Between Throw and Throws
+    How many types of Exceptions are there
+    What is Compile Time and Runtime Exception
+    What are Compile time and Runtime Exceptions
+    What is Heirarchy of Exceptions in Java
+
+  Design Patterns
+    What is Design Pattern in Java
+    How many Types of Design Patterns are there in Java
+    What is Singleton Adapter Builder Desing pattern in Java
+
+  MultiThreading
+    What is Threads in Java
+    What is MultiThreding
+    What is Runnable Interface in Java
+    What if we call run() instead if start()
+    Difference Between Creating Thread with Runnable Interface and Thread Class
+    What is yield(), sleep, join(), joinAll(),
+    What is Thread LifeCycle
+    Why wait() and notify() are in Object Class
+    How to stop thread in Java
+    What is Synchronization 
+    What is Synchronized method and Synchronized block?
+
+Hibernate JPA
+  What is Hibernate
+  When JDBC was there why hibernat came into Picture
+  What are Advantages of Hibernate
+  What is ORM
+  What are all interface in Hibernate
+  What is sessionFactory 
+  What is Session
+  How to implement Hibernate 
+  What are Annotation used for Hibernate
+  Difference Between get() vs load()
+  What is proxy Object 
+  What is Transaction
+  What is Lazy Loading and Eager Loading
+  What is 2nd Level Cache
+  What is Criteria in Hibernate
+  What is HQL
+  What are the states of Object in Hibernate
+  Difference between save() and persist()
+  Difference between update() and merge()
+  What association mappping are there in Hibernate and Explain oneToOne oneToMany manyToOne and manyToMany Mappings
+  How to make composite key in Hibernate?
+
+Spring 
+  Core
+    What is Spring
+    What are Benifnits of Spring Framwork
+    What are Different Module in Spring
+    What is Inversion of Control (IoC)
+    What is Dependancy Injection
+    Type of Dependency Injection
+    What is AOP
+    What is Autowiring what are different modes of AutoWiring
+    How to Configure Spring and What is Configuration File
+    What is Spring Bean
+    What is Bean Life Cycle
+    What is Bean Scopes and how to define it and what is default bean scope
+    What is Lazy and Eager Initialization
+    What annotation are used in Spring
+    What containers are there in Spring
+    Difference between ApplicationContext and BeanFactory
+    How many type we can configure Spring project
+    What does @component does
+    what does @Autowire does
+
+  MVC
+    What is Spring MVC
+    What is Dispatcher servlet or Front Controller
+    What is flow of request in Spring
+    What is advantage of Spring MVC
+    What is controller in Spring MVC
+    What are all annotaions used in Spring MVC
+    How to integrate Spring with ORM
+    JDBC template with Spring
+    what does @qualifier does 
+    Differenc between @qualifie and @required
+    Differenc between @Component @Controller and @Service
+
+  Spring Boot
+    What is Spring Boot
+    How to Configure Spring Boot
+    Differenc between @Controller and @RestController
+    What is embeded server?
+    How to deploy Springboot in other server?
+
+WebServices
+  Rest
+    What is Web Services 
+    What is RestFul webservices
+    What is @pathvariable does
+    What are characteristics of WebServices
+    What is RestTemplate
+    How to Consume WebService
+    What Http methods are there?
+    What is @RequestMapping and @ResponseBody
+    What is OAuth and OAuth2
+    Difference between OAuth and OAuth2
+
+Microservices
+  What is Microservices
+  What is Advantage of Microservice
+  Explaine Microservices
+  Difference Between Microservice Architecture and Monolithic Architecture
+  What is fault tolerence
+  What is Discovery Server
+  What is API Gateway
+  How to implement Microservices
+  Disadvantages of Microservices
+  What is Spring Cloud
+  What is Eureka Server
+  What is Zuul proxy
+  What is Hystrix
+  What is configserver
+  What is Load balancing
+  What is naming server
+  What is Fain
+  How do you call internal API
+  What is Zipkin
+  Exception Handling in Microservices
+
+Programs
+
+Q : Can we override static method ?
+Q : Can we Change return type in method Overloading ?
+Q : Why cant we change return type in method overloading ?
+Q : Can we override private methods ?
+Q : What is blank final variable ?
+Q : can we re-assign Final variable ?
+Q : What is local variable, instance variable and static vairable and what are there scopes ?
+Q : How Java Objects stored in memory ?
+Q : Why multiple Inheritence is not supported in Java ?
+Q : What is finalize() ?
+Q : How Garbage collector works in Java
+Q : What happen if we Run Java class without main method But static block is there ?
+Q : What are features of Java 8 ?
+Q : What is constructor overloading ?
+Q : What is serialization and deserialization in Java ?
+Q : What is the purpose of transient variable ?
+Q : What is the purpose of a Volatile Variable?
+Q : What is inner classes?
+Q : What is Immutable class and How to create immutable class ?
+Q : What is difference between Framework and Library ?

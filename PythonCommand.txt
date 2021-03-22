@@ -1,3 +1,64 @@
 python --version
 pip install panda
 python -m pip install --upgrade pip
+python -m pip --version
+
+
+---------------
+#Django Command
+__________________________________________
+#To install virtual enviroment wrapper WINDOWS
+>pip install virtualenvwrapper-win
+or
+> pip install virtualenv 
+
+#To create virtual enviroment  WINDOWS
+>mkvirtualenv {envname}
+or
+>virtualenv myenv
+
+#To activate Environment
+>myenv\Scripts\activate
+or
+>workon {envname}
+___________________________________________
+
+#To install virtual enviroment wrapper LINUX
+> pip install virtualenv 
+
+#To create virtual enviroment  LINUX
+>virtualenv myenv
+
+#To activate Environment
+>source virtualenv_name/bin/activate
+___________________________________________
+
+#To check virtual env installation
+>virtualenv --version
+
+#To install pip for virual environment
+#python -m ensurepip
+
+#To make project
+>django-admin startproject {projname}
+
+#To make app
+>python manage.py startapp {appname}
+
+#To install django
+>pip install django
+
+#To install django Rest Framework
+>pip install djangorestframework
+
+#To install postgresql
+>pip install psycopg2
+
+#To Migrate
+>python manage.py migrate
+
+#To Migrations
+>python manage.py makemigration {classname}
+
+#To Run Server
+>python manage.py runserver

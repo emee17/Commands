@@ -23,6 +23,11 @@ git push -u origin master
 git remote add origin master (url)
 
 https://github.com/emee17/SpringMvcJPACrud.git
+####################### Git connect local to remote #################
+git remote add --fetch master <url>
+git push --set-upstream <url>  master
+#####################################################################
+
 
 git init <repo name>	// for creating git repo inside current folder
 git init 	// for creating git repo current folder
@@ -44,3 +49,21 @@ touch .gitignore // create git ignore
 git reset .//unstage all files
 
 git pull origin branchname --allow-unrelated-histories // fatal: refusing to merge unrelated histories
+
+
+git config user.name "code-jango"
+git config user.email "codejango7@gmail.com"
+git config user.password "Super-Coder1"
+
+git config user.name "emee17"
+git config user.email "emmibad@gmail.com"
+git config user.password "github@96emee17"
+
+---------------
+echo "# spring_security_with_jwt_jpa" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/emee17/spring_security_with_jwt_jpa.git
+git push -u origin main
