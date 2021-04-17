@@ -51,13 +51,7 @@ git reset .//unstage all files
 git pull origin branchname --allow-unrelated-histories // fatal: refusing to merge unrelated histories
 
 
-git config user.name "code-jango"
-git config user.email "codejango7@gmail.com"
-git config user.password "Super-Coder1"
 
-git config user.name "emee17"
-git config user.email "emmibad@gmail.com"
-git config user.password "github@96emee17"
 
 ---------------
 echo "# spring_security_with_jwt_jpa" >> README.md
