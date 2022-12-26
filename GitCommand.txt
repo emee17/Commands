@@ -50,6 +50,9 @@ git reset .//unstage all files
 
 git pull origin branchname --allow-unrelated-histories // fatal: refusing to merge unrelated histories
 
+git remote set-url origin https://emee17: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@github.com/emee17/Java-Online-Sessions.git
+
+
 
 
 
